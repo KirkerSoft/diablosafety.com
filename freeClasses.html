@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>News</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/wow/wow.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('html').hasClass('desktop')) {
+                new WOW().init();
+            }
+        });
+    </script>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+</head>
+
+<body>
+
+<div class="page">
+
+<!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header">
+
+    <div class="panel">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="btn-wrap">
+                        <a class="btn f__left" href="#"><span class="fa fa-user primary"> </span> Create an account
+                        </a>
+                        <a class="btn f__left" href="#"><span class="fa fa-unlock-alt primary"> </span> Login</a>
+                    </div>
+                    <div class="f__right f__none-767">
+                        <div class="form-wrap">
+                            <form id="search" class="search" action="search/search.php" method="get"
+                                  accept-charset="utf-8">
+                                <label class="input_wrap" for="search2">
+                                    <input id="search2" onfocus="if(this.value == 'Search'){this.value = '';}"
+                                           onblur="if(this.value == ''){this.value='Search';}" type="text" name="s"
+                                           value="Search"/>
+                                </label>
+                                <span class="fa fa-search"></span>
+                            </form>
+                            <a class="btn fa fa-play primary"
+                               onclick="document.getElementById('search').submit()"
+                               href="#"></a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="stuck_container">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="f__left logo-caption f__none-767">
+                        <h1>
+                            <a href="index.html">Medical <span>training</span></a>
+                        </h1>
+                    </div>
+
+                    <nav class="header-menu f__right f__none-767">
+                        <ul class="sf-menu">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="aboutUs.html">About</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">history</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">news</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">latest</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">archive</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">testimonials</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="onlineClasses.html">Online Classes</a>
+                            </li>
+                            <li class="current">
+                                <a href="freeClasses.html">Free Classes</a>
+                            </li>
+                            <li>
+                                <a class="last" href="contactUs.html">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+<!--========================================================
+                          CONTENT
+=========================================================-->
+<section id="content">
+
+    <div class="stellar-section">
+        <div class="stellar-block stellar7" data-stellar-background-ratio="0.2">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid_12 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="box2">
+                                <h2>Patient Care <br/>
+                                    Technician Nurse Aid</h2>
+
+                                <p class="big">Fusce consequat ligula ipsum. Integer porttitor vel magna a volutpat.
+                                    Proin euismod sem eu pulvinar mattis. Quisque ac quam urna. Nam <br/>iaculis mi non
+                                    odio
+                                    vehicula tempus. Mauris consequat nulla dui, quis consectetur velit ultrices ut.
+                                    Cras viverra rhoncus congue. Donec sit <br/> amet ligula eget lacus commodo luctus a
+                                    ut
+                                    quam. Nam tortor erat, finibus at justo vel, ultricies convallis ex. Donec
+                                    ullamcorper lacus vitae <br/> lectus consectetur efficitur. Phasellus sagittis ante
+                                    a
+                                    ligula fringilla lacinia. Class aptent taciti sociosqu ad litora torquent per
+                                    conubia nostra, <br/> per inceptos himenaeos. Ut eu sollicitudin felis. Pellentesque
+                                    varius blandit metus, dictum ultricies </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt_1">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="box3 bg white">
+                        <h3>recent news</h3>
+
+                        <div class="row">
+                            <div class="grid_6 wow fadeInLeft" data-wow-delay="0.4s">
+
+                                <div class="news-box pad-left">
+                                    <img class="f__left f__none-768 f__none-479" src="./images/page4-img3.jpg" alt=""/>
+                                    <div class="o__hidden">
+                                        <h4>
+                                            <a href="#">Donec eget tellus non
+                                                lacinia fermentum
+                                            </a>
+                                        </h4>
+
+                                        <div class="meta">
+                                            <div class="inline">
+                                                <span class="fa fa-circle"></span>
+                                                <a href="#">Milan Tomic</a>
+                                            </div>
+                                            <div class="inline">
+                                                <span class="fa fa-circle"></span>
+                                                <a href="#">Moments</a>
+                                            </div>
+                                            <div class="inline">
+                                                <span class="fa fa-circle"></span>
+                                                <a href="#">June 11, 2014</a>
+                                            </div>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet conse cte tur adipisicing elit, sed do eiumod
+                                            tem por
+                                            inci
+                                            didunt ut labore et dolore ag na aliqua. Ut enim ad minim veniam, quis
+                                            nostrud
+                                            exerc
+                                            itation. Lorem ipsum dolor sit </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="grid_6 wow fadeInRight" data-wow-delay="0.4s">
+                                <div class="news-box pad-right">
+                                    <img class="f__left f__none-768 f__none-479" src="./images/page4-img4.jpg" alt=""/>
+                                    <div class="o__hidden">
+                                        <h4>
+                                            <a href="#">Donec eget tellus non
+                                                lacinia fermentum
+                                            </a>
+                                        </h4>
+                                        <div class="meta">
+                                            <div class="inline">
+                                                <span class="fa fa-circle"></span>
+                                                <a href="#">Milan Tomic</a>
+                                            </div>
+                                            <div class="inline">
+                                                <span class="fa fa-circle"></span>
+                                                <a href="#">Moments</a>
+                                            </div>
+                                            <div class="inline">
+                                                <span class="fa fa-circle"></span>
+                                                <a href="#">June 11, 2014</a>
+                                            </div>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet conse cte tur adipisicing elit, sed do eiumod tem
+                                            por
+                                            inci
+                                            didunt ut labore et dolore ag na aliqua. Ut enim ad minim veniam, quis
+                                            nostrud
+                                            exerc
+                                            itation. Lorem ipsum dolor sit </p>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid_12">
+                    <div class="box3 box3__inset1 bg4 wow fadeInRight" data-wow-delay="0.2s">
+                        <h3 class="tp">interesting info</h3>
+
+                        <img class="f__left pad-left f__none-767" src="./images/page4-img5.jpg" alt=""/>
+                        <div class="caption o__hidden pad-right">
+                            <h4> Tellus non erat lacinia fermentum donec in velit velip sum auctor vestibulum iaculis
+                                lacinia est</h4>
+
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillumdo lore eu fugiat
+                                nulla pariatur. Ex cepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt mollit. Lorem ipsum do lor sit amet, consectetur adipiscing elit.
+                                Aliquam nec tempor purus. Cras dolor neque, viverra non mau ris at, tincidunt suscipit
+                                risus. Donec consequat enim id sagittis suscipit. Nullam justo magna, lacinia non lorem
+                                vitae, posuere ultrices purus. Sed venenatis arcu condimentum </p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <a class="btn_red fa fa-play" href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="stellar-section mt">
+        <div class="stellar-block stellar8" data-stellar-background-ratio="0.2">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid_6">
+                            <div class="video">
+                                <iframe src="//player.vimeo.com/video/37582125"  allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="grid_6">
+                            <div class="video">
+                                <iframe src="//player.vimeo.com/video/37582125"  allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg last">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="mt_1">
+                        <div class="box3 box3__inset2 bg4 wow fadeInUp" data-wow-delay="0.2s">
+                            <h3 class="tp">The Career Services Department</h3>
+
+                            <div class="row">
+                                <div class="grid_4 wow fadeInLeft" data-wow-delay="0.4s">
+                                    <p class="heading pad-left">
+                                        <a href="#">Fusce consectetur aliquam erat Morbi
+                                            placerat ipsum Praesent port
+                                        </a>
+                                    </p>
+
+                                    <p class="pad-left">Lorem ipsum dolor sit amet conse cte tur adipisicing elit, sed
+                                        do eiumod tem por
+                                        incididunt ut labore et dolore ag na aliqua. </p>
+
+                                    <div class="divider f__right f__none-767"></div>
+                                    <div class="date pad-left big"><span class="number">August 16</span>
+                                        <a class="link primary" href="#">read more</a>
+                                    </div>
+                                </div>
+                                <div class="grid_4 wow fadeInUp" data-wow-delay="0.5s">
+                                    <p class="heading pad-right">
+                                        <a href="#">dolor sed leoraesent laoreet Pestibul
+                                            um molestieenean nonummy
+                                        </a>
+                                    </p>
+
+                                    <p class="pad-right">Fo eiumod tem por incididunt ut labore et olore ag na aliqua.
+                                        Ut enim ad minim
+                                        veniam, quis no strud exercitationLorem ipsum dolo</p>
+
+                                    <div class="divider"></div>
+                                    <div class="date pad-right big"><span class="number">August 16</span>
+                                        <a class="link primary" href="#">read more</a>
+                                    </div>
+                                </div>
+                                <div class="grid_4 wow fadeInUp" data-wow-delay="0.6s">
+                                    <p class="heading pad-right">
+                                        <a href="#">Lorem ipsum dolor sed leoraesent laoreet
+                                            Pestibulum molestieenean nonu
+                                        </a>
+                                    </p>
+
+                                    <p class="pad-right">Sur adipisicing elit, sed do eiumod tem por incididunt ut
+                                        labore et dolore ag na
+                                        aliqua. Ut enim ad minim veniam, quis nostrud </p>
+
+                                    <div class="divider"></div>
+                                    <div class="date big pad-right"><span class="number">August 16</span>
+                                        <a class="link primary" href="#">read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--========================================================
+                          FOOTER
+=========================================================-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="grid_12">
+                <p class="copyright">
+                    Medical Training &copy;
+                    <span id="copyright-year"></span>.
+                    <a class="primary" href="privacy.html">Privacy policy</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

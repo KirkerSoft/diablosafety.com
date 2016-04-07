@@ -1,14 +1,408 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script>
+    <script src="js/jquery.matchHeight-min.js"></script>
+    <script>
+        $(function () {
+            $(".equal-height").matchHeight();
+        })
+    </script>
+    <script src="js/wow/wow.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('html').hasClass('desktop')) {
+                new WOW().init();
+            }
+        });
+    </script>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+</head>
 
-<html>
-	<head>
-		<title>Page under construction</title>
-		<meta http-equiv="Refresh" content="30; url=http://www.diablofirearmsafety.com/">
-		<script type="text/javascript">
-			window.location.href = "http://www.diablofirearmsafety.com";
-		</script>
-	</head>
-	<body>
-		This web site is under construction, you are being redirected to our <a href="http://www.diablofirearmsafety.com/" target="_top">alternate home page</a>.
-	</body>
+<body>
+
+<div class="page">
+
+<!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header">
+
+    <div class="panel">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="btn-wrap">
+                        <a class="btn f__left" href="#"><span class="fa fa-user primary"> </span> Create an account</a>
+                        <a class="btn f__left" href="#"><span class="fa fa-unlock-alt primary"> </span> Login</a>
+                    </div>
+                    <div class="f__right f__none-767">
+                        <div class="form-wrap">
+                            <form id="search" class="search" action="search/search.php" method="get"
+                                  accept-charset="utf-8">
+                                <label class="input_wrap" for="search2">
+                                    <input id="search2" onfocus="if(this.value == 'Search'){this.value = '';}"
+                                           onblur="if(this.value == ''){this.value='Search';}" type="text" name="s"
+                                           value="Search"/>
+                                </label>
+                                <span class="fa fa-search"></span>
+                            </form>
+                            <a class="btn fa fa-play primary"
+                               onclick="document.getElementById('search').submit()"
+                               href="#"></a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="stuck_container">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="f__left logo-caption f__none-767">
+                        <h1>
+                            <a href="index.html">Medical <span>training</span></a>
+                        </h1>
+                    </div>
+
+                    <nav class="header-menu f__right f__none-767">
+                        <ul class="sf-menu">
+                            <li class="current">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="aboutUs.html">About</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">history</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">news</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">latest</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">archive</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">testimonials</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="onlineClasses.html">Online Classes</a>
+                            </li>
+                            <li>
+                                <a href="freeClasses.html">Free Classes</a>
+                            </li>
+                            <li>
+                                <a class="last" href="contactUs.html">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+<!--========================================================
+                          CONTENT
+=========================================================-->
+<section id="content">
+
+<div class="stellar-section">
+    <div class="stellar-block stellar1" data-stellar-background-ratio="0.2">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_12 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="slide-caption white">
+                            <h3>
+                                Your knowledge may
+                                save somebody’s life
+                            </h3>
+
+                            <p class="big">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate.</p>
+                            <a class="btn1 fa fa-play" href="#"></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="grid_12">
+            <div class="mt_1">
+                <div class="img-wrap w66 f__right  f__none-979  equal-height wow fadeInRight" data-wow-delay="0.2s" data-mh="1">
+                    <img src="./images/page1-img2.jpg" alt=""/>
+                </div>
+                <div class="box w33 f__left equal-height white wow fadeInLeft" data-wow-delay="0.2s" data-mh="1">
+                    <h3>Welcome!</h3>
+
+                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate.</p>
+                    <a class="btn fa fa-play" href="#"></a>
+                </div>
+                <div class="img-wrap w33 f__left equal-height wow fadeInLeft" data-wow-delay="0.2s" data-mh="2">
+                    <img  src="./images/page1-img3.jpg" alt=""/>
+                </div>
+                <div class="box_skin2 w66 f__right  equal-height wow fadeInRight" data-wow-delay="0.2s" data-mh="2">
+                    <h3 class="tp">About</h3>
+
+                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet
+                        conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur.</p>
+                    <a class="btn_red fa fa-play" href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt">
+    <div class="stellar-section">
+        <div class="stellar-block stellar2" data-stellar-background-ratio="0.2">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid_12 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="box2">
+                                <h2>Be confident in your <br/>
+                                    ability to help</h2>
+
+                                <p class="big">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
+                                    eiusmod tempor <br/> incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim
+                                    veniam, quis nostrud <br/> exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo
+                                    consequat. Duis aute <br/> irure dolor in reprehenderit in voluptate.</p>
+                                <a class="btn_red fa fa-play" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt_1">
+    <div class="float-box">
+        <div class="box_skin2 w33 equal-height wow fadeInUp" data-wow-delay="0.2s" data-mh="3">
+            <h3 class="tp">Directions</h3>
+
+            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.</p>
+
+            <a class="btn_red fa fa-play" href="#"></a>
+        </div>
+        <div class="box_skin3 w33 equal-height wow fadeInUp" data-wow-delay="0.3s" data-mh="3">
+            <h3 class="white">Trainings
+                schedule</h3>
+
+            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate.</p>
+
+            <a class="btn btn__hover2 fa fa-play" href="#"></a>
+        </div>
+        <div class="img-wrap w33 equal-height wow fadeInUp" data-wow-delay="0.4s" data-mh="3">
+            <img src="./images/page1-img4.jpg" alt=""/>
+        </div>
+    </div>
+
+</div>
+
+<div class="bg mt">
+    <section class="map abs">
+        <div class="google-map-api">
+            <div id="map-canvas" class="gmap"></div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="grid_8"></div>
+            <div class="grid_4">
+                <div class="addr white wow fadeInRight" data-wow-delay="0.2s">
+                    <h4>4578 Marmora Road,
+                        Glasgow D04 89GR</h4>
+
+                    <h3>800 2345-6789</h3>
+
+                    <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut
+                        aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+                        Lorem
+                        ipsum dolor sit amet
+                        conse ctetur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg2">
+    <div class="bg3 abs"></div>
+    <div class="container">
+        <div class="row">
+            <div class="grid_4 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="list equal" data-mh="4">
+                    <h4 class="white">Information</h4>
+                    <ul class="link-list">
+                        <li>
+                            <a href="#">Lorem ipsum dolor</a>
+                        </li>
+                        <li>
+                            <a href="#">Conse ctetur</a>
+                        </li>
+                        <li>
+                            <a href="#">Eiusmod tempor</a>
+                        </li>
+                        <li>
+                            <a href="#">Incididunt ut labore</a>
+                        </li>
+                        <li>
+                            <a href="#">Et dolore magna</a>
+                        </li>
+                        <li>
+                            <a href="#">Ut enim ad minim</a>
+                        </li>
+                        <li>
+                            <a href="#">Quis nostrud</a>
+                        </li>
+                        <li>
+                            <a href="#">Eaxercitation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid_4 wow fadeInLeft" data-wow-delay="0.3s">
+                <div class="list list__offset1 equal" data-mh="4">
+                    <h4 class="white">About</h4>
+                    <ul class="link-list">
+                        <li>
+                            <a href="#">Conse ctetur</a>
+                        </li>
+                        <li>
+                            <a href="#">Eiusmod tempor</a>
+                        </li>
+                        <li>
+                            <a href="#">Incididunt ut labore</a>
+                        </li>
+                        <li>
+                            <a href="#">Et dolore magna</a>
+                        </li>
+                        <li>
+                            <a href="#">Ut enim ad minim</a>
+                        </li>
+                        <li>
+                            <a href="#">Quis nostrud</a>
+                        </li>
+                        <li>
+                            <a href="#">Eaxercitation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid_4 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="social equal" data-mh="4">
+                    <h4 class="white">Follow us</h4>
+                    <ul class="social-list">
+                        <li>
+                            <a class="fa fa-facebook" href="#"></a>
+                        </li>
+                        <li>
+                            <a class="fa fa-twitter" href="#"></a>
+                        </li>
+                        <li>
+                            <a class="fa fa-google-plus" href="#"></a>
+                        </li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut
+                        aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate. Lorem
+                        ipsum dolor
+                        sit amet
+                        conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna
+                        aliqua. Ut
+                        enim ad minim.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+<!--========================================================
+                          FOOTER
+=========================================================-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="grid_12">
+                <p class="copyright">
+                    Medical Training &copy;
+                    <span id="copyright-year"></span>.
+                    <a class="primary" href="privacy.html">Privacy policy</a>
+                    More Ambulance Website Templates at <a rel="nofollow" href="http://www.templatemonster.com/category/ambulance-website-templates/" target="_blank">TemplateMonster.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="js/google-map.js"></script>
+<script src="js/script.js"></script>
+</body>
 </html>

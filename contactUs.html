@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contacts</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/contact-form.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script>
+    <script src="js/TMForm.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/wow/wow.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('html').hasClass('desktop')) {
+                new WOW().init();
+            }
+        });
+    </script>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+</head>
+
+<body>
+
+<div class="page">
+
+<!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header">
+
+    <div class="panel">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="btn-wrap">
+                        <a class="btn f__left" href="#"><span class="fa fa-user primary"> </span> Create an account
+                        </a>
+                        <a class="btn f__left" href="#"><span class="fa fa-unlock-alt primary"> </span> Login</a>
+                    </div>
+                    <div class="f__right f__none-767">
+                        <div class="form-wrap">
+                            <form id="search" class="search" action="search/search.php" method="get"
+                                  accept-charset="utf-8">
+                                <label class="input_wrap" for="search2">
+                                    <input id="search2" onfocus="if(this.value == 'Search'){this.value = '';}"
+                                           onblur="if(this.value == ''){this.value='Search';}" type="text" name="s"
+                                           value="Search"/>
+                                </label>
+                                <span class="fa fa-search"></span>
+                            </form>
+                            <a class="btn fa fa-play primary"
+                               onclick="document.getElementById('search').submit()"
+                               href="#"></a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="stuck_container">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="f__left logo-caption f__none-767">
+                        <h1>
+                            <a href="index.html">Medical <span>training</span></a>
+                        </h1>
+                    </div>
+
+                    <nav class="header-menu f__right f__none-767">
+                        <ul class="sf-menu">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="aboutUs.html">About</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">history</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">news</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">latest</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">archive</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">testimonials</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="onlineClasses.html">Online Classes</a>
+                            </li>
+                            <li>
+                                <a href="freeClasses.html">Free Classes</a>
+                            </li>
+                            <li class="current">
+                                <a class="last" href="contactUs.html">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+<!--========================================================
+                          CONTENT
+=========================================================-->
+<section id="content">
+
+    <section class="map2">
+        <div class="google-map-api">
+            <div id="map-canvas" class="gmap"></div>
+        </div>
+    </section>
+
+
+    <div class="bg4 last">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="mt">
+                        <div class="box3 bg white">
+                            <div class="row">
+                                <div class="grid_4">
+                                    <div class="addr2">
+                                        <h3>address</h3>
+                                        <h4 class="pad-left">
+                                            9870 St Vincent Place,
+                                            Glasgow, DC 45 Fr 45.
+                                        </h4>
+                                        <dl class="pad-left">
+                                            <dt>Freephone: <br/>
+                                                Telephone: <br/>
+                                                FAX: <br/>
+                                            <dd>+1 800 559 6580 <br/>
+                                                +1 800 603 6035 <br/>
+                                                +1 800 889 9898
+                                            </dd>
+                                        </dl>
+                                        <p class="mail pad-left">E-mail:
+                                            <a href="mailto:#">mail@demolink.org</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="grid_8">
+                                    <h3 class="pad-0">contact form</h3>
+
+                                    <div class="form-wrapper pad-right">
+                                        <form id="contact-form">
+                                            <div class="contact-form-loader"></div>
+                                            <label class="name">
+                                                <input type="text" name="name" placeholder="Name:" value=""
+                                                       data-constraints="@Required @JustLetters"/>
+                                                <span class="empty-message">*This field is required.</span>
+                                                <span class="error-message">*This is not a valid name.</span>
+                                            </label>
+                                            <label class="email">
+                                                <input type="text" name="email" placeholder="Email:" value=""
+                                                       data-constraints="@Required @Email"/>
+                                                <span class="empty-message">*This field is required.</span>
+                                                <span class="error-message">*This is not a valid email.</span>
+                                            </label>
+                                            <label class="phone">
+                                                <input type="text" name="phone" placeholder="Phone:" value=""
+                                                       data-constraints="@Required @JustNumbers"/>
+                                                <span class="error-message">*This is not a valid phone.</span>
+                                            </label> <label class="message">
+                                            <textarea name="message" placeholder="Message:"
+                                                      data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                                            <span class="empty-message">*This field is required.</span>
+                                            <span class="error-message">*The message is too short.</span>
+                                        </label>
+
+                                            <div class="btn-wrapper">
+                                                <a class="form-btn t__up" href="#" data-type="submit">Send</a>
+                                            </div>
+                                            <div class="modal fade response-message">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                    aria-hidden="true">&times;</button>
+                                                            <h4 class="modal-title">Modal title</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            You message has been sent! We will be in touch soon.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--========================================================
+                          FOOTER
+=========================================================-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="grid_12">
+                <p class="copyright">
+                    Medical Training &copy;
+                    <span id="copyright-year"></span>.
+                    <a class="primary" href="privacy.html">Privacy policy</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="js/google-map.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
